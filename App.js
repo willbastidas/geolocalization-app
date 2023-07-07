@@ -10,8 +10,8 @@ import {styles} from './styles/estilos';
 
 export default function App() {
    const [origin, setOrigin] = React.useState ({
-      latitute: 10.488314,
-      longitude: -66.855794,
+      latitute: 10.49032,
+      longitude: -66.85351,
    });
 
   return (
@@ -23,7 +23,9 @@ export default function App() {
              latitudeDelta: 0.09,
              longitudeDelta: 0.04,
            }}
-         />
+         >
+          
+         </MapView>
     </View>
   );
 }
