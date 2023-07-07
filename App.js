@@ -9,20 +9,20 @@ import {styles} from './styles/estilos';
 
 
 export default function App() {
-  //  const [origin, setOrigin] = React.useState ({
-  //     latitute: 10.488314,
-  //     longitude: -66.855794,
-  // });
+   const [origin, setOrigin] = React.useState ({
+      latitute: 10.488314,
+      longitude: -66.855794,
+   });
 
   return (
     <View style={styles.container}>
         <MapView style={styles.map}
-        //   initialRegion={{
-        //     latitude: origin.latitude,
-        //     longitude: origin.longitude,
-        //     latitudeDelta: 0.09,
-        //     longitudeDelta: 0.04,
-        //   }}
+          initialRegion={{
+             latitude: origin.latitude,
+            longitude: origin.longitude,
+             latitudeDelta: 0.09,
+             longitudeDelta: 0.04,
+           }}
          />
     </View>
   );
